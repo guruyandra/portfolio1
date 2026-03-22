@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guru Yandra — Copywriter</title>
+  <meta name="description" content="Copywriter with 6+ years across blogs, emails, scripts, web copy, and performance marketing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── HERO ── */
+    .hero { padding: 88px 0; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 55fr 45fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 20px;
+      display: block;
+    }
+    .hero-name {
+      font-family: var(--font-serif);
+      font-weight: 900;
+      font-size: clamp(52px, 6vw, 80px);
+      line-height: 1.0;
+      margin-bottom: 18px;
+      letter-spacing: -0.02em;
+    }
+    .hero-tagline {
+      font-size: 18px;
+      color: var(--mid);
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .hero-deco {
+      font-family: var(--font-serif);
+      font-weight: 900;
+      font-size: 220px;
+      color: var(--linen);
+      line-height: 0.85;
+      text-align: right;
+      user-select: none;
+      pointer-events: none;
+    }
+    /* ── WORK SECTION ── */
+    .work-subsection { margin-bottom: 64px; }
+    /* ── IMAGE BREAK ── */
+    .image-break {
+      width: 100%;
+      height: 320px;
+      background: var(--linen);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .image-break-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--mid);
+      letter-spacing: 0.08em;
+    }
+    .image-break-note {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      color: var(--mid);
+      font-style: italic;
+      max-width: 400px;
+      text-align: center;
+      line-height: 1.5;
+    }
+    /* ── STATS SECTION (snapshot) ── */
+    .stats-inner {
+      text-align: center;
+      padding-top: 60px;
+    }
+    .stats-title-inv {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: clamp(28px,4vw,40px);
+      color: var(--paper);
+      margin-bottom: 48px;
+    }
+    /* ── LETTER ── */
+    .letter-wrapper {
+      max-width: 660px;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-deco { display: none; }
+      .image-break { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Guru Yandra</a>
+  <div class="nav-links">
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle">
+        Work
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href="blogs.html">Blogs</a>
+        <a href="emails.html">Emails</a>
+        <a href="webcopy.html">Web Copy</a>
+        <a href="youtube.html">YouTube Scripts</a>
+        <a href="paidads.html">Paid Ads</a>
+      </div>
+    </div>
+    <a href="resume.html">Résumé</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE OVERLAY -->
+<div class="nav-mobile-overlay" id="mobileOverlay">
+  <button class="nav-mobile-close" id="mobileClose">✕ close</button>
+  <a href="index.html">Home</a>
+  <div class="nav-mobile-sub">
+    <a href="blogs.html">Blogs</a>
+    <a href="emails.html">Emails</a>
+    <a href="webcopy.html">Web Copy</a>
+    <a href="youtube.html">YouTube Scripts</a>
+    <a href="paidads.html">Paid Ads</a>
+  </div>
+  <a href="resume.html">Résumé</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- SECTION 1: HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-label" data-aos="fade-up" data-aos-delay="0">Copywriter · Content Strategist</span>
+        <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">Guru<br>Yandra</h1>
+        <p class="hero-tagline" data-aos="fade-up" data-aos-delay="200">6+ years of writing that gets read, clicked, and remembered.</p>
+        <div class="hero-tags" data-aos="fade-up" data-aos-delay="350">
+          <span class="tag">Blogs</span>
+          <span class="tag">Promotional Articles</span>
+          <span class="tag">Website Pages</span>
+          <span class="tag">YouTube Scripts</span>
+          <span class="tag">Emails</span>
+          <span class="tag">Email Campaigns</span>
+          <span class="tag">Performance Marketing</span>
+          <span class="tag">Paid Ads</span>
+        </div>
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
+          <a href="resume.html" class="btn-primary">View Résumé</a>
+          <a href="contact.html" class="btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-deco" aria-hidden="true">"</div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- SECTION 2: THE WORK -->
+<section class="section" id="work">
+  <div class="container">
+    <span class="section-label">Selected Work</span>
+    <h2 class="section-title">The writing.</h2>
+
+    <!-- BLOGS -->
+    <div class="work-subsection">
+      <div class="subsection-header">
+        <span class="subsection-label">Blogs</span>
+        <div class="subsection-rule"></div>
+      </div>
+      <a href="portfolio-piece.html" class="featured-card" data-aos="fade-up">
+        <div class="featured-thumb">[ Blog post screenshot ]</div>
+        <div class="featured-body">
+          <span class="tag">Blog Post</span>
+          <div class="featured-title">How [Brand] Grew Organic Traffic by 200% in 6 Months</div>
+          <p class="featured-desc">A deep-dive content strategy piece that combined SEO research with genuine storytelling to pull in qualified readers.</p>
+          <span class="featured-cta">Read piece →</span>
+        </div>
+      </a>
+      <div class="grid-3" data-aos="fade-up" data-aos-delay="80">
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">Blog</span>
+            <div class="card-title">The Beginner's Guide to [Topic]</div>
+            <p class="card-desc">Top-of-funnel educational content built around keyword clusters.</p>
+            <span class="card-link">Read piece →</span>
+          </div>
+        </a>
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">Blog</span>
+            <div class="card-title">Why [Industry Trend] Is Changing Everything</div>
+            <p class="card-desc">Thought leadership article for a B2B SaaS brand.</p>
+            <span class="card-link">Read piece →</span>
+          </div>
+        </a>
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">Blog</span>
+            <div class="card-title">10 [Product] Mistakes You're Probably Making</div>
+            <p class="card-desc">Listicle-format post that drove significant time-on-page.</p>
+            <span class="card-link">Read piece →</span>
+          </div>
+        </a>
+      </div>
+      <div class="see-all"><a href="blogs.html">See all blog posts →</a></div>
+    </div>
+
+    <!-- EMAILS -->
+    <div class="work-subsection">
+      <div class="subsection-header">
+        <span class="subsection-label">Emails</span>
+        <div class="subsection-rule"></div>
+      </div>
+      <div class="grid-3" data-aos="fade-up">
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ email screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">Email</span>
+            <div class="card-title">Welcome sequence — [Brand]</div>
+            <p class="card-desc">5-email onboarding flow that increased 30-day retention.</p>
+            <span class="card-link">View piece →</span>
+          </div>
+        </a>
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ email screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">Email Campaign</span>
+            <div class="card-title">Re-engagement campaign — [Brand]</div>
+            <p class="card-desc">Win-back sequence achieving 40% open rate uplift.</p>
+            <span class="card-link">View piece →</span>
+          </div>
+        </a>
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ email screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">Email</span>
+            <div class="card-title">Product launch email — [Brand]</div>
+            <p class="card-desc">Single announcement email with strong conversion CTA.</p>
+            <span class="card-link">View piece →</span>
+          </div>
+        </a>
+      </div>
+      <div class="see-all"><a href="emails.html">See all email work →</a></div>
+    </div>
+
+    <!-- WEB COPY -->
+    <div class="work-subsection">
+      <div class="subsection-header">
+        <span class="subsection-label">Web Copy</span>
+        <div class="subsection-rule"></div>
+      </div>
+      <div class="grid-3" data-aos="fade-up">
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ page screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">Landing Page</span>
+            <div class="card-title">Product landing page — [Brand]</div>
+            <p class="card-desc">Full-page copy for a D2C launch with conversion focus.</p>
+            <span class="card-link">View piece →</span>
+          </div>
+        </a>
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ page screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">Homepage</span>
+            <div class="card-title">Homepage rewrite — [Brand]</div>
+            <p class="card-desc">Full above-the-fold and features section copy.</p>
+            <span class="card-link">View piece →</span>
+          </div>
+        </a>
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ page screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">About Page</span>
+            <div class="card-title">Brand story — [Brand]</div>
+            <p class="card-desc">Narrative-led about page for a purpose-driven startup.</p>
+            <span class="card-link">View piece →</span>
+          </div>
+        </a>
+      </div>
+      <div class="see-all"><a href="webcopy.html">See all web copy →</a></div>
+    </div>
+
+    <!-- YOUTUBE SCRIPTS -->
+    <div class="work-subsection">
+      <div class="subsection-header">
+        <span class="subsection-label">YouTube Scripts</span>
+        <div class="subsection-rule"></div>
+      </div>
+      <div class="grid-3" data-aos="fade-up">
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ script screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">YouTube Script</span>
+            <div class="card-title">Explainer video — [Brand/Creator]</div>
+            <p class="card-desc">Educational script structured for high watch-time retention.</p>
+            <span class="card-link">View script →</span>
+          </div>
+        </a>
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ script screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">YouTube Script</span>
+            <div class="card-title">Documentary-style video — [Brand]</div>
+            <p class="card-desc">Long-form brand storytelling script, 12-minute runtime.</p>
+            <span class="card-link">View script →</span>
+          </div>
+        </a>
+        <a href="portfolio-piece.html" class="portfolio-card">
+          <div class="card-thumb">[ script screenshot ]</div>
+          <div class="card-body">
+            <span class="tag">YouTube Script</span>
+            <div class="card-title">Product review script — [Creator]</div>
+            <p class="card-desc">Authentic review format written for a tech YouTuber.</p>
+            <span class="card-link">View script →</span>
+          </div>
+        </a>
+      </div>
+      <div class="see-all"><a href="youtube.html">See all YouTube scripts →</a></div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- SECTION 3: ACHIEVEMENTS SNAPSHOT -->
+<section class="achievements-dark section" id="achievements-snapshot">
+  <div class="container">
+    <span class="section-label">By the Numbers</span>
+    <div class="stats-title-inv" data-aos="fade-up">Work that moved the needle.</div>
+    <div class="stat-grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="stat-block">
+        <div class="stat-number">2M+</div>
+        <div class="stat-label">Words published</div>
+        <div class="stat-sub">Across all formats</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">40%</div>
+        <div class="stat-label">Avg. email open rate lift</div>
+        <div class="stat-sub">Across campaigns</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Brands written for</div>
+        <div class="stat-sub">Multiple industries</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">6+</div>
+        <div class="stat-label">Years of experience</div>
+        <div class="stat-sub">Full-time &amp; freelance</div>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a href="achievements.html" class="btn-inverted" data-aos="fade-up">See full achievements →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: THE LETTER -->
+<section class="section">
+  <div class="container">
+    <div class="letter-wrapper">
+      <span class="section-label">A Bit About Me</span>
+      <div class="letter-text" data-aos="fade-up">
+        <!-- REPLACE THIS WITH YOUR ACTUAL TEXT -->
+        <p>Hi — I'm Guru. I've spent the last 6+ years writing copy that earns its place on the page. Blogs that rank. Emails that get opened. Scripts that get watched till the end.</p>
+        <br>
+        <p>I care about words that work — not words that fill space. Every piece I write starts with understanding who's reading it and what they need to feel, know, or do next.</p>
+        <br>
+        <p>If my résumé brought you here, this is what the work actually looks like. Take your time with it.</p>
+      </div>
+      <div class="letter-meta" data-aos="fade-up" data-aos-delay="100">
+        Based in India &nbsp;·&nbsp; Open to full-time roles &nbsp;·&nbsp; Available for freelance
+      </div>
+      <div style="margin-top:32px;" data-aos="fade-up" data-aos-delay="200">
+        <a href="contact.html" class="btn-primary">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-row">
+    <span class="footer-logo">Guru Yandra</span>
+    <nav class="footer-links">
+      <a href="index.html#work">Work</a>
+      <a href="resume.html">Résumé</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span class="footer-email">hello@guruyandra.com</span>
+  </div>
+  <div class="footer-bottom">© 2025 Guru Yandra</div>
+</footer>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/main.js"></script>
+<script>AOS.init({ duration: 700, once: true, offset: 60 });</script>
+</body>
+</html>
